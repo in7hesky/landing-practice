@@ -2,6 +2,25 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
 .white-svg {
     filter: invert(99%) sepia(74%) saturate(217%) hue-rotate(166deg) brightness(103%) contrast(96%);
 }
@@ -11,11 +30,18 @@ body {
     flex-direction: column;
 }
 
+.header-wrapper {
+    background: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     display: flex;
     flex-direction: column;
-    background: #1F2937;
     color: white;
+    width: 900px;
     padding: 25px 100px;
 }
 
@@ -28,6 +54,12 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    color: #e5e7eb;
+}
+
+.logo-image {
+    width: 50px;
+    height: auto;
 }
 
 .header-intro {
@@ -37,6 +69,19 @@ nav {
 
 .welcome-wrapper {
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.welcome-title {
+    font-size: 48px;
+    color: #e4eefe;
+}
+
+.welcome-text {
+    color: #e5e7eb;
 }
 
 .welcome-image {
@@ -50,6 +95,14 @@ main {
     text-align: center;
     gap: 50px;
     align-self: center;
+    padding: 40px 20px 80px 20px;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #293340;
+    margin-bottom: 20px;
 }
 
 .cards-wrapper {
@@ -62,18 +115,86 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 250px;
+    gap: 20px;
+    color: #737b86;
+    font-size: 20px;
 }
 
-.quote-wrapper {
-    align-self: center;
+article {
+    background: #e5e7eb;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.quote {
+    flex: 1;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #414a56;
 }
 
-img {
-    width: 100px;
+.author {
+    color: #293340;
+    text-align: right;
+    font-weight: bold;
 }
+
+.invite-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.invite-bar {
+    background: #3b82f6;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 900px;
+}
+
+.invite-title {
+    color: #fdfeff;
+}
+
+.invite-text {
+    color: #e4eefe;
+}
+
+footer {
+    background: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+}
+
+.copyright-warning {
+    color: #fdfeff;
+}
+
+.signup-button {
+    color: #e4eefe;
+    font-weight: bold;
+    padding: 6px 12px;
+    background: #3b82f6;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.signup-button:hover {
+    cursor: pointer;
+}
+
+.button-white {
+    border: 1px solid white;
+}
+
