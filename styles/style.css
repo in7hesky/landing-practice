@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+.white-svg {
+    filter: invert(99%) sepia(74%) saturate(217%) hue-rotate(166deg) brightness(103%) contrast(96%);
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: #1F2937;
+    color: white;
+    padding: 25px 100px;
+}
+
+.nav-wrapper {
+    list-style-type: none;
+    display: flex;
+    gap: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-wrapper {
+    align-self: center;
+}
+
+.welcome-image {
+    width: 300px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    align-self: center;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-items: center;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.quote-wrapper {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100px;
+}
